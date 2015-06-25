@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+<title>Class Statistics Assignment</title>
+<link rel = "stylesheet" href="styles/formstyle.css">
+<script language = "javascript"  src = "script/marks.js"></script>
+</head>
+<body onload="setup()">
+<div id ="container">
+<header>
+<h1>Software Systems Development</h1>
+</header>
+<section>
+<form name = "statistics" action = "" class="contact"id="statistics">
+<fieldset>
+<legend>Class Statistics</legend>
+<fieldset id = "student">
+<legend>New Student</legend>
+<div>
+<label for="name">Name</label>
+<input type="text" name="name" id="name" size="20"   pattern = "[A-Z][a-z]+( [A-Z][a-z]+)?" title="Please enter a name (Surname optional) with First Letter capitalised" onblur="isFilled(this)"></div>
+<div>
+<label for="mark1">Mark One</label>
+ <input type="text" name="mark1" id="mark1" size="3" maxlength ="3" value="0" onblur="isFilledNum(this)"></div>
+<div>
+<label for="mark2">Mark Two</label>
+ <input type="text"  name="mark2" id="mark2" size="3" maxlength ="3" value="0" onblur="isFilledNum(this)" >
+</div>
+<div>
+<label for="mark3">Mark Three</label>
+<input type="text"  name="mark3" id="mark3" size="3" maxlength ="3" value="0" onblur="isFilledNum(this)">
+</div>
+<div>
+<label for="mark4">Exam Mark</label>
+<input type="text"  name="mark4" id="mark4" size="3" maxlength ="3" value="0" onblur="isFilledNum(this)">
+</div>
+<div>
+<input type = "button" id = "btn" value= "Add Student Data" onclick="getData()">
+</div>
+</fieldset>
+
+<div id = "texttarea">
+<textarea name = "resultdata" rows = "10" cols = "30"></textarea>
+</div>
+<div>
+<input type = "button" id = "btn" value= "Get Individual Result" onclick="getResult()">
+</div>
+</fieldset>
+</form>
+</section>
+</div>
+</body>
+</html>

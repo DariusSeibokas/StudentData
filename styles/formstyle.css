@@ -1,0 +1,63 @@
+body {
+  font-family: Verdana, Helvetica, Arial, sans-serif;
+  background-color: #e2edff;
+  line-height: 125%;
+  padding: 0;
+  margin: 10px;
+}
+
+#container {
+  padding:1em;
+}
+
+header {
+  padding:2em;
+  background-color: navy;
+}
+
+section {
+  margin-top:1em;
+}
+
+h1 {
+  font-size: x-large;
+  color: white;
+  text-align:center;
+}
+
+fieldset {   
+  border: 2px solid navy;   
+  padding: 10px; 
+}  
+
+legend {   
+  font-weight: bold;   
+  font-size: medium;   
+  color: navy;   
+  padding: 5px; 
+}
+
+label {
+  font-size: small;
+  color: navy;  
+  width:8em;
+  float:left;
+}
+
+textarea {   
+  margin: 1em;   
+}
+
+input#btn {   
+  background: navy;
+  color: white;   
+  font-weight: bold;   
+  padding: 5px;  
+  border: 1px solid white; 
+  margin:1em 0 0 1em;
+}
+
+fieldset #student {
+   float:right;
+   width:40%;
+}
